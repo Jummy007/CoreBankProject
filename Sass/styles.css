@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.first_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2vh 6vw;
+  color: white;
+  height: 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #405558;
+}
+
+.first_header .none {
+  display: none;
+}
+
+.second_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2vh 6vw;
+  width: 100%;
+  color: #12082D;
+  font-size: 16px;
+}
+
+.second_header .none {
+  display: none;
+}
+
+.second_header .logo {
+  width: 75%;
+}
+
+@media screen and (min-width: 920px) {
+  .first_header .none {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .first_header .first_header_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .first_header .first_header_left * {
+    margin-right: 8px;
+  }
+  .first_header .first_header_left *:last-child {
+    margin-right: 0;
+  }
+  .first_header .first_header_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .first_header .first_header_right * {
+    margin-left: 8px;
+  }
+  .first_header .first_header_right *:last-child {
+    margin-left: 0;
+  }
+  .second_header .menu {
+    display: none;
+  }
+  .second_header .none {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .left,
+  .right {
+    gap: 15px;
+  }
+  button {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ef9b11), to(#405558));
+    background: linear-gradient(180deg, #ef9b11 0%, #405558 100%);
+    border-radius: 7px;
+    padding: 2px 3px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
