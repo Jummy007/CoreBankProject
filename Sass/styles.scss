@@ -25,8 +25,11 @@
   justify-content: space-between;
   padding: 2vh 6vw;
   width: 100%;
-  color: $text_main_color;
-  
+
+  a {
+    color: $text_main_color;
+  }
+
   font-size: 16px;
 
   .none {
@@ -34,6 +37,46 @@
   }
   .logo {
     width: 75%;
+  }
+}
+.second_header + section {
+  padding: 2vh 6vw;
+  background-image: url(/Images/laptopManMobile.svg);
+  // background-position: 68% 0;
+  background-size: cover;
+  h1 {
+    color: $text_main_color;
+    font-size: 24px;
+  }
+  p {
+    color: $small_text;
+    font-size: 12px;
+  }
+  div {
+    width: 60%;
+    p {
+      line-height: 20px;
+    }
+  }
+  @media screen and (min-width: 580px) {
+    height: 100vh;
+    padding-top: 60px;
+    div {
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+  }
+  @media screen and (min-width: 460px){
+height: 60vh;
+padding-top: 65px;
+h1{
+  font-size: 30px;
+}
   }
 }
 
@@ -80,6 +123,28 @@
   button {
     background: linear-gradient(180deg, #ef9b11 0%, #405558 100%);
     border-radius: 7px;
-    padding: 2px 3px;
+    padding: 3px 4px;
+    color: white;
+    border: none;
+  }
+  .second_header + section {
+    background-image: url(/Images/laptopManDesktop.svg);
+    height: 80vh;
+    padding-top: 130px;
+    color: $text_main_color;
+
+    background-size: cover;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    div {
+      h1 {
+        font-size: 54px;
+      }
+      p {
+        font-size: 18px;
+        width: 600px;
+        line-height: 30px;
+      }
+    }
   }
 }
