@@ -208,7 +208,6 @@ main {
       );
       @media screen and (min-width: 920px) {
         display: flex;
-
       }
       .texts {
         padding: $sidePadding;
@@ -222,7 +221,7 @@ main {
       h2 {
         color: white;
         font-size: 28px;
-        @media screen and (min-width:920px){
+        @media screen and (min-width: 920px) {
           color: $text_main_color;
           font-size: 56px;
         }
@@ -231,14 +230,16 @@ main {
         color: white;
         font-size: 16px;
         line-height: 40px;
-        @media screen and (min-width:920px){
+        @media screen and (min-width: 920px) {
           font-size: 18px;
           color: $small_text;
         }
       }
-      .button{
-        display: flex;
-        justify-content: space-between;
+      .button {
+        @media screen and (min-width: 920px) {
+          display: flex;
+          justify-content: space-between;
+        }
       }
       .btn_1 {
         background: linear-gradient(180deg, #ef9b11 0%, #405558 100%);
@@ -258,5 +259,22 @@ main {
         background-color: transparent;
       }
     }
+    &.forthSection {
+      img:nth-child(1){
+        width: 100%;
+        @media screen and (min-width:920px){
+          display: none;
+        }
+
+      }
+      img:nth-child(2){
+        display: none;
+        @media screen and (min-width:920px){
+          display: block;
+          width: 100%;
+        }
+      }
+    }
   }
+  
 }
