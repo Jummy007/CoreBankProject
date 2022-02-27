@@ -274,4 +274,84 @@ main section.secondSection .wrapper + div {
     display: block;
   }
 }
+
+main section.thirdSection {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(239, 155, 17, 0.5)), to(rgba(64, 85, 88, 0.5)));
+  background: linear-gradient(180deg, rgba(239, 155, 17, 0.5) 0%, rgba(64, 85, 88, 0.5) 100%);
+}
+
+@media screen and (min-width: 920px) {
+  main section.thirdSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+main section.thirdSection .texts {
+  padding: 6vw;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+main section.thirdSection > img {
+  width: 100%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+main section.thirdSection h2 {
+  color: white;
+  font-size: 28px;
+}
+
+@media screen and (min-width: 920px) {
+  main section.thirdSection h2 {
+    color: #12082D;
+    font-size: 56px;
+  }
+}
+
+main section.thirdSection p {
+  color: white;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+@media screen and (min-width: 920px) {
+  main section.thirdSection p {
+    font-size: 18px;
+    color: rgba(18, 8, 45, 0.8);
+  }
+}
+
+main section.thirdSection .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section.thirdSection .btn_1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ef9b11), to(#405558));
+  background: linear-gradient(180deg, #ef9b11 0%, #405558 100%);
+  border-radius: 10px;
+  color: white;
+  padding: 2vh 6.2vw;
+  border: none;
+  font-size: 14px;
+}
+
+main section.thirdSection .btn_2 {
+  border: 2px solid white;
+  color: white;
+  border-radius: 10px;
+  padding: 2vh 6.5vw;
+  font-size: 14px;
+  background-color: transparent;
+}
 /*# sourceMappingURL=styles.css.map */
