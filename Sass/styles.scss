@@ -260,21 +260,176 @@ main {
       }
     }
     &.forthSection {
-      img:nth-child(1){
+      img:nth-child(1) {
         width: 100%;
-        @media screen and (min-width:920px){
+        @media screen and (min-width: 920px) {
           display: none;
         }
-
       }
-      img:nth-child(2){
+      img:nth-child(2) {
         display: none;
-        @media screen and (min-width:920px){
+        @media screen and (min-width: 920px) {
           display: block;
           width: 100%;
         }
       }
     }
+    &.lastSection {
+      background-color: $lastSectionColor;
+      padding: $sidePadding;
+
+      .joined {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .none {
+        display: none;
+        @media screen and (min-width: 920px) {
+          display: block;
+        }
+      }
+
+      h3 {
+        font-size: 28px;
+        color: $text_main_color;
+      }
+      .ratings {
+        border: 1px solid white;
+        background-color: white;
+        border-radius: 10px;
+        padding: 2vh 5vw;
+        width: 100%;
+        @media screen and (min-width: 920px) {
+          display: none;
+        }
+
+        p {
+          line-height: 36px;
+          font-size: 16px;
+          color: $small_text;
+        }
+        h2 {
+          font-size: 18px;
+          color: $text_main_color;
+        }
+      }
+      .lines {
+        display: flex;
+        justify-content: center;
+        @media screen and (min-width: 920px) {
+          display: none;
+        }
+      }
+
+      .ratingDesktop {
+        display: flex;
+        justify-content: space-evenly;
+
+        gap: 20px;
+
+        .none {
+          border: 1px solid white;
+          background-color: white;
+          border-radius: 10px;
+          width: 377px;
+          padding: 2vh 3vw;
+        }
+        p {
+          line-height: 36px;
+        }
+      }
+    }
   }
+}
+footer {
+  background-color: $text_main_color;
+   padding: $heightPadding $sidePadding;
+  //    @media screen and (min-width:920px){
+  //    display: flex;
+  //  }
+   .none{
+     display: none;
+     @media screen and (min-width:920px){
+       display: block;
+     }
+   }
+
+  p {
+    color: white;
+    font-size: 14px;
+  }
+  h2 {
+    color: $footerColor;
+    font-size: 20px;
   
+  }
+
+  .shortNav {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  .footerLinks {
+    display: flex;
+    justify-content: space-between;
+  }
+  ul {
+    li {
+      list-style: none;
+      line-height: 35px;
+      font-size: 14px;
+      a{
+        color: white;
+      }
+      a:hover {
+        cursor: pointer;
+        color: blue;
+      }
+    }
+  }
+  .contact{
+    p:last-child{
+      font-size: 11px;
+    }
+  }
+  .playStore{
+    border: 1px solid $footerColor;
+    background-color: $footerColor;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 2vh 3vw;
+    padding-bottom: 45px;
+    width: 160px;
+    height: 9vh;
+    gap: 10px;
+     div{
+       
+       p{
+font-size: 15px;
+         color: $footerDownload;
+       }
+      
+
+    }
+  }
+
+
+  .appStore{
+    display: flex;
+     border: 1px solid $footerColor;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2vh 3vw;
+    gap: 10px;
+    width: 160px;
+    height: 8vh;
+    padding-bottom: 40px;
+    p{
+      color: $footerDownload;
+    }
+  }
 }

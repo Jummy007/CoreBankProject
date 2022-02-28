@@ -77,7 +77,7 @@ header section.second_header {
 }
 
 header section.second_header a {
-  color: #12082D;
+  color: #12082d;
 }
 
 header section.second_header .none {
@@ -146,7 +146,7 @@ main section.firstSection {
   main section.firstSection {
     background-image: url(/Images/laptopManDesktop.svg);
     width: 100%;
-    color: #12082D;
+    color: #12082d;
     background-size: cover;
     min-height: 500px;
     height: 12vh;
@@ -154,7 +154,7 @@ main section.firstSection {
 }
 
 main section.firstSection h1 {
-  color: #12082D;
+  color: #12082d;
   font-size: 24px;
 }
 
@@ -220,11 +220,11 @@ main section.secondSection .container {
 }
 
 main section.secondSection .wrapper {
-  color: #12082D;
+  color: #12082d;
 }
 
 main section.secondSection .wrapper h1 {
-  color: #12082D;
+  color: #12082d;
   font-size: 28px;
 }
 
@@ -309,7 +309,7 @@ main section.thirdSection h2 {
 
 @media screen and (min-width: 920px) {
   main section.thirdSection h2 {
-    color: #12082D;
+    color: #12082d;
     font-size: 56px;
   }
 }
@@ -376,5 +376,200 @@ main section.forthSection img:nth-child(2) {
     display: block;
     width: 100%;
   }
+}
+
+main section.lastSection {
+  background-color: rgba(255, 187, 11, 0.5);
+  padding: 6vw;
+}
+
+main section.lastSection .joined {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.lastSection .none {
+  display: none;
+}
+
+@media screen and (min-width: 920px) {
+  main section.lastSection .none {
+    display: block;
+  }
+}
+
+main section.lastSection h3 {
+  font-size: 28px;
+  color: #12082d;
+}
+
+main section.lastSection .ratings {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2vh 5vw;
+  width: 100%;
+}
+
+@media screen and (min-width: 920px) {
+  main section.lastSection .ratings {
+    display: none;
+  }
+}
+
+main section.lastSection .ratings p {
+  line-height: 36px;
+  font-size: 16px;
+  color: rgba(18, 8, 45, 0.8);
+}
+
+main section.lastSection .ratings h2 {
+  font-size: 18px;
+  color: #12082d;
+}
+
+main section.lastSection .lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 920px) {
+  main section.lastSection .lines {
+    display: none;
+  }
+}
+
+main section.lastSection .ratingDesktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 20px;
+}
+
+main section.lastSection .ratingDesktop .none {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10px;
+  width: 377px;
+  padding: 2vh 3vw;
+}
+
+main section.lastSection .ratingDesktop p {
+  line-height: 36px;
+}
+
+footer {
+  background-color: #12082d;
+  padding: 2vh 6vw;
+}
+
+footer .none {
+  display: none;
+}
+
+@media screen and (min-width: 920px) {
+  footer .none {
+    display: block;
+  }
+}
+
+footer p {
+  color: white;
+  font-size: 14px;
+}
+
+footer h2 {
+  color: #EF9B11;
+  font-size: 20px;
+}
+
+footer .shortNav {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footerLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer ul li {
+  list-style: none;
+  line-height: 35px;
+  font-size: 14px;
+}
+
+footer ul li a {
+  color: white;
+}
+
+footer ul li a:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+footer .contact p:last-child {
+  font-size: 11px;
+}
+
+footer .playStore {
+  border: 1px solid #EF9B11;
+  background-color: #EF9B11;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2vh 3vw;
+  padding-bottom: 45px;
+  width: 160px;
+  height: 9vh;
+  gap: 10px;
+}
+
+footer .playStore div p {
+  font-size: 15px;
+  color: #2F2F2F;
+}
+
+footer .appStore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #EF9B11;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2vh 3vw;
+  gap: 10px;
+  width: 160px;
+  height: 8vh;
+  padding-bottom: 40px;
+}
+
+footer .appStore p {
+  color: #2F2F2F;
 }
 /*# sourceMappingURL=styles.css.map */
