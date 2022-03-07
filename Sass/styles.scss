@@ -345,91 +345,106 @@ main {
 }
 footer {
   background-color: $text_main_color;
-   padding: $heightPadding $sidePadding;
-  //    @media screen and (min-width:920px){
-  //    display: flex;
-  //  }
-   .none{
-     display: none;
-     @media screen and (min-width:920px){
-       display: block;
-     }
-   }
+  padding: 2vh $sidePadding;
 
-  p {
-    color: white;
-    font-size: 14px;
-  }
-  h2 {
-    color: $footerColor;
-    font-size: 20px;
-  
-  }
-
-  .shortNav {
-    padding-top: 40px;
-    display: flex;
-    justify-content: space-between;
-  
-  }
   .footerLinks {
     display: flex;
     justify-content: space-between;
+    @media screen and (min-width: 920px) {
+      display: block;
+      margin-top: 30px;
+    }
   }
-  ul {
-    li {
-      list-style: none;
-      line-height: 35px;
-      font-size: 14px;
-      a{
-        color: white;
+  .foot {
+    @media screen and (min-width: 920px) {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  }
+  .all {
+    @media screen and (min-width: 920px) {
+      display: flex;
+      
+    }
+    .footerLinks {
+      @media screen and (min-width: 920px) {
+        display: flex;
+        
       }
-      a:hover {
-        cursor: pointer;
-        color: blue;
+      .footerLinks1 {
+        @media screen and (min-width: 920px) {
+          margin-right: 80px;
+        }
+      }
+      .footerLinks2 {
+        @media screen and (min-width: 920px) {
+          margin-right: 50px;
+        }
       }
     }
   }
-  .contact{
-    p:last-child{
+  .none {
+    display: none;
+    @media screen and (min-width: 920px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .last {
+    @media screen and (min-width: 920px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  p {
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .corebankParagraph {
+    color: white;
+    @media screen and (min-width: 920px) {
+      width: 274px;
+    }
+  }
+
+  .shortNav {
+    color: $footerColor;
+    font-size: 20px;
+  }
+
+
+  .footerLinks {
+    ul {
+      li {
+        list-style: none;
+        line-height: 40px;
+        font-size: 17px;
+        font-weight: 100;
+        a {
+          color: white;
+        }
+        a:hover {
+          cursor: pointer;
+          color: blue;
+        }
+      }
+    }
+  }
+  .contact {
+    p:last-child {
       font-size: 11px;
     }
-  }
-  .playStore{
-    border: 1px solid $footerColor;
-    background-color: $footerColor;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    padding: 2vh 3vw;
-    padding-bottom: 45px;
-    width: 160px;
-    height: 9vh;
-    gap: 10px;
-     div{
-       
-       p{
-font-size: 15px;
-         color: $footerDownload;
-       }
-      
-
+    @media screen and (min-width: 920px) {
+      margin-top: 42px;
+      line-height: 15px;
     }
   }
 
-
-  .appStore{
-    display: flex;
-     border: 1px solid $footerColor;
-    background-color: white;
-    border-radius: 10px;
-    padding: 2vh 3vw;
-    gap: 10px;
-    width: 160px;
-    height: 8vh;
-    padding-bottom: 40px;
-    p{
-      color: $footerDownload;
+  .btns {
+    @media screen and (min-width: 920px) {
+      display: none;
     }
   }
 }

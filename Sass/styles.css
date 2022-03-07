@@ -475,36 +475,6 @@ footer {
   padding: 2vh 6vw;
 }
 
-footer .none {
-  display: none;
-}
-
-@media screen and (min-width: 920px) {
-  footer .none {
-    display: block;
-  }
-}
-
-footer p {
-  color: white;
-  font-size: 14px;
-}
-
-footer h2 {
-  color: #EF9B11;
-  font-size: 20px;
-}
-
-footer .shortNav {
-  padding-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 footer .footerLinks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -514,17 +484,117 @@ footer .footerLinks {
           justify-content: space-between;
 }
 
-footer ul li {
-  list-style: none;
-  line-height: 35px;
-  font-size: 14px;
+@media screen and (min-width: 920px) {
+  footer .footerLinks {
+    display: block;
+    margin-top: 30px;
+  }
 }
 
-footer ul li a {
+@media screen and (min-width: 920px) {
+  footer .foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  footer .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  footer .all .footerLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  footer .all .footerLinks .footerLinks1 {
+    margin-right: 80px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  footer .all .footerLinks .footerLinks2 {
+    margin-right: 50px;
+  }
+}
+
+footer .none {
+  display: none;
+}
+
+@media screen and (min-width: 920px) {
+  footer .none {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  footer .last {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer p {
+  color: white;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+footer .corebankParagraph {
   color: white;
 }
 
-footer ul li a:hover {
+@media screen and (min-width: 920px) {
+  footer .corebankParagraph {
+    width: 274px;
+  }
+}
+
+footer .shortNav {
+  color: #EF9B11;
+  font-size: 20px;
+}
+
+footer .footerLinks ul li {
+  list-style: none;
+  line-height: 40px;
+  font-size: 17px;
+  font-weight: 100;
+}
+
+footer .footerLinks ul li a {
+  color: white;
+}
+
+footer .footerLinks ul li a:hover {
   cursor: pointer;
   color: blue;
 }
@@ -533,43 +603,16 @@ footer .contact p:last-child {
   font-size: 11px;
 }
 
-footer .playStore {
-  border: 1px solid #EF9B11;
-  background-color: #EF9B11;
-  border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 2vh 3vw;
-  padding-bottom: 45px;
-  width: 160px;
-  height: 9vh;
-  gap: 10px;
+@media screen and (min-width: 920px) {
+  footer .contact {
+    margin-top: 42px;
+    line-height: 15px;
+  }
 }
 
-footer .playStore div p {
-  font-size: 15px;
-  color: #2F2F2F;
-}
-
-footer .appStore {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px solid #EF9B11;
-  background-color: white;
-  border-radius: 10px;
-  padding: 2vh 3vw;
-  gap: 10px;
-  width: 160px;
-  height: 8vh;
-  padding-bottom: 40px;
-}
-
-footer .appStore p {
-  color: #2F2F2F;
+@media screen and (min-width: 920px) {
+  footer .btns {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
